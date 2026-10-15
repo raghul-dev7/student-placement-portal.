@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Placement Portal</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f6fb;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #123b70;
+            color: white;
+            padding: 24px 8%;
+        }
+
+        header h1 {
+            margin-bottom: 6px;
+        }
+
+        nav {
+            background: #0b2850;
+            padding: 12px 8%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 24px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 28px 18px;
+        }
+
+        section {
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            color: #123b70;
+            margin-bottom: 16px;
+        }
+
+        .stats, .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .stat {
+            border-left: 5px solid #1976d2;
+        }
+
+        .stat h3 {
+            font-size: 30px;
+            color: #1976d2;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #dbeafe;
+            color: #123b70;
+            padding: 4px 10px;
+            border-radius: 15px;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        footer {
+            background: #123b70;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px 12px 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>University Placement Portal</h1>
+        <p>Discover opportunities. Build your future.</p>
+    </header>
+
+    <nav>
+        <a href="#statistics">Statistics</a>
+        <a href="#students">Students</a>
+        <a href="#companies">Companies</a>
+        <a href="#drives">Recruitment Drives</a>
+    </nav>
+
+    <main>
+        <section id="statistics">
+            <h2>Placement Statistics</h2>
+            <div class="stats">
+                <div class="card stat">
+                    <h3>850+</h3>
+                    <p>Students Placed</p>
+                </div>
+                <div class="card stat">
+                    <h3>120+</h3>
+                    <p>Recruiting Companies</p>
+                </div>
+                <div class="card stat">
+                    <h3>18 LPA</h3>
+                    <p>Highest Package</p>
+                </div>
+                <div class="card stat">
+                    <h3>7.2 LPA</h3>
+                    <p>Average Package</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="students">
+            <h2>Featured Student Profiles</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Arun Kumar</h3>
+                    <p>Department: Computer Science</p>
+                    <p>CGPA: 8.7</p>
+                    <p>Skills: Java, SQL, Web Development</p>
+                </div>
+                <div class="card">
+                    <h3>Priya Sharma</h3>
+                    <p>Department: Information Technology</p>
+                    <p>CGPA: 9.1</p>
+                    <p>Skills: Python, Cloud, Data Analytics</p>
+                </div>
+                <div class="card">
+                    <h3>Vikram Raj</h3>
+                    <p>Department: Software Engineering</p>
+                    <p>CGPA: 8.4</p>
+                    <p>Skills: Java, Git, Docker</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="companies">
+            <h2>Recruiting Companies</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>TCS</h3>
+                    <p>Roles: Graduate Trainee, Developer</p>
+                    <p>Eligibility: Check the official drive notice</p>
+                    <span class="tag">IT Services</span>
+                </div>
+                <div class="card">
+                    <h3>Infosys</h3>
+                    <p>Roles: Systems Engineer</p>
+                    <p>Eligibility: Check the official drive notice</p>
+                    <span class="tag">Software</span>
+                </div>
+                <div class="card">
+                    <h3>Accenture</h3>
+                    <p>Roles: Associate Software Engineer</p>
+                    <p>Eligibility: Check the official drive notice</p>
+                    <span class="tag">Technology</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="drives">
+            <h2>Upcoming Recruitment Drives</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>TCS Recruitment</h3>
+                    <p>Date: 25 November 2026</p>
+                    <p>Check the placement cell notice for registration and eligibility.</p>
+                </div>
+                <div class="card">
+                    <h3>Infosys Recruitment</h3>
+                    <p>Date: 2 December 2026</p>
+                    <p>Check the placement cell notice for registration and eligibility.</p>
+                </div>
+                <div class="card">
+                    <h3>Accenture Recruitment</h3>
+                    <p>Date: 10 December 2026</p>
+                    <p>Check the placement cell notice for registration and eligibility.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>University Placement Cell | Student Career Portal</p>
+    </footer>
+</body>
+</html>
